@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祝刘奕帆17岁生日快乐！</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        // 配置Tailwind自定义颜色和字体
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        birthday: {
+                            lightpink: '#FFD1DC',
+                            pink: '#FF85A2',
+                            hotpink: '#FF69B4',
+                            purple: '#C084FC',
+                            lavender: '#E6E6FA',
+                            gold: '#FFD700',
+                            cream: '#FFF8DC',
+                            yellow: '#FFF275',
+                            blue: '#87CEEB',
+                            green: '#98FB98',
+                            peach: '#FFB3BA'
+                        }
+                    },
+                    fontFamily: {
+                        xingkai: ['"Ma Shan Zheng"', 'cursive'],
+                        regular: ['"Nunito"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            }
+            .text-shadow-lg {
+                text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+            }
+            .candle-flame {
+                animation: flicker 2s infinite alternate;
+            }
+            .float {
+                animation: float 3s ease-in-out infinite;
+            }
+            .float-delay-1 {
+                animation: float 3s ease-in-out 0.5s infinite;
+            }
+            .float-delay-2 {
+                animation: float 3s ease-in-out 1s infinite;
+            }
+            .spin-slow {
+                animation: spin 8s linear infinite;
+            }
+            .pulse-slow {
+                animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            }
+            .shine {
+                position: relative;
+                overflow: hidden;
+            }
+            .shine::after {
+                content: '';
+                position: absolute;
+                top: -50%;
+                left: -50%;
+                width: 200%;
+                height: 200%;
+                background: linear-gradient(
+                    to right,
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 0.3) 50%,
+                    rgba(255, 255, 255, 0) 100%
+                );
+                transform: rotate(30deg);
+                animation: shine 6s infinite;
+            }
+            .cake-deco {
+                animation: float 4s ease-in-out infinite;
+            }
+            .cake-deco-1 {
+                animation: float 4s ease-in-out 0.5s infinite;
+            }
+            .cake-deco-2 {
+                animation: float 4s ease-in-out 1s infinite;
+            }
+            .frosting {
+                border-radius: 50% 50% 0 0 / 20% 20% 0 0;
+            }
+            .wheel-section {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 50% 100%);
+                transform-origin: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .wheel-text {
+                position: absolute;
+                top: 20%;
+                width: 40%;
+                text-align: center;
+                transform-origin: center bottom;
+                font-weight: bold;
+                font-size: 12px;
+                color: white;
+                text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            }
+        }
+
+        @keyframes flicker {
+            0% { transform: scale(0.95) rotate(-2deg); opacity: 0.9; filter: blur(0.5px); }
+            100% { transform: scale(1.05) rotate(2deg); opacity: 1; filter: blur(0.7px); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%) rotate(30deg); }
+            100%, 20% { transform: translateX(100%) rotate(30deg); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes blowOut {
+            from { opacity: 1; transform: scale(1); }
+            to { opacity: 0; transform: scale(0.5); }
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            70% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes confetti-fall {
+            0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        .blow-out {
+            animation: blowOut 1s ease forwards;
+        }
+
+        .pop-in {
+            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700;800&display=swap');
+    </style>
+</head>
+<body class="bg-gradient-to-br from-birthday-lightpink/30 via-birthday-cream/50 to-birthday-lavender/30 min-h-screen font-regular text-gray-800 overflow-x-hidden">
+    <!-- 背景装饰 -->
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+        <div class="absolute top-[10%] left-[5%] w-16 h-24 bg-birthday-pink rounded-full opacity-70 float"></div>
+        <div class="absolute top-[5%] left-[85%] w-20 h-28 bg-birthday-purple rounded-full opacity-70 float-delay-1"></div>
+        <div class="absolute top-[15%] left-[90%] w-14 h-20 bg-birthday-hotpink rounded-full opacity-70 float-delay-2"></div>
+        
+        <div class="absolute top-[20%] left-[10%] text-birthday-pink text-2xl opacity-60 float"><i class="fa fa-heart"></i></div>
+        <div class="absolute top-[5%] left-[30%] text-birthday-purple text-xl opacity-50 float-delay-1"><i class="fa fa-heart"></i></div>
+        <div class="absolute top-[12%] left-[75%] text-birthday-hotpink text-2xl opacity-60 float-delay-2"><i class="fa fa-heart"></i></div>
+        <div class="absolute top-[25%] left-[80%] text-birthday-pink text-xl opacity-50 float"><i class="fa fa-heart"></i></div>
+        
+        <div class="absolute top-[30%] left-[5%] text-birthday-pink text-2xl opacity-70 float">✧⁺⸜(●˙▾˙●)⸝⁺✧</div>
+        <div class="absolute top-[40%] left-[90%] text-birthday-purple text-2xl opacity-70 float-delay-1">(◍•ᴗ•◍)♡</div>
+        <div class="absolute top-[60%] left-[10%] text-birthday-hotpink text-2xl opacity-70 float-delay-2">♡(*´∇｀*)ﾉ</div>
+        <div class="absolute top-[70%] left-[85%] text-birthday-gold text-2xl opacity-70 float">(๑˃̵ᴗ˂̵)و</div>
+        <div class="absolute top-[50%] left-[50%] text-birthday-yellow text-2xl opacity-70 float-delay-1">ʕ•̀ω•́ʔ✧</div>
+    </div>
+
+    <!-- 顶部装饰 -->
+    <div class="fixed top-0 left-0 w-full h-16 bg-white/80 backdrop-blur-sm z-50 shadow-md border-b border-birthday-pink/30">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-extrabold text-birthday-hotpink text-shadow">生日快乐！</h1>
+            <div class="flex gap-3 items-center">
+                <span class="text-birthday-purple text-xl"><i class="fa fa-gift float"></i></span>
+                <span class="text-birthday-pink text-xl"><i class="fa fa-heart float" style="animation-delay: 0.5s"></i></span>
+                <span class="text-birthday-hotpink text-xl"><i class="fa fa-star float" style="animation-delay: 1s"></i></span>
+                <button id="musicBtn" class="text-birthday-gold text-xl hover:text-birthday-gold/80 transition">
+                    <i class="fa fa-music"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主内容区 -->
+    <main class="container mx-auto px-4 pt-24 pb-16 relative z-10">
+        <!-- 欢迎部分 -->
+        <section class="text-center mb-16 fade-in" style="animation-delay: 0.3s">
+            <div class="inline-block relative mb-6">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-birthday-pink via-birthday-hotpink to-birthday-purple mb-6 text-shadow-lg">
+                    祝刘奕帆生日快乐！
+                </h1>
+                <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-birthday-pink to-birthday-purple"></div>
+            </div>
+            <p class="text-xl md:text-2xl text-gray-700 mb-8 font-semibold">17岁的你，如花朵般绽放！这是我们的小寿星哦 (๑˃̵ᴗ˂̵)و</p>
+            
+            <div class="inline-block bg-white p-4 rounded-2xl shadow-xl transform transition-all hover:scale-[1.02]">
+                <div class="relative">
+                    <images src="images/寿星.jpg" alt="刘奕帆的照片" class="rounded-xl w-full max-w-md mx-auto border-4 border-birthday-pink object-cover">
+                    <div class="absolute -bottom-3 -right-3 bg-birthday-gold text-gray-800 font-bold rounded-full w-16 h-16 flex items-center justify-center text-xl shadow-lg border-2 border-white">
+                        17
+                    </div>
+                    <div class="absolute -top-3 -left-3 bg-birthday-pink text-white font-bold rounded-full w-12 h-12 flex items-center justify-center text-lg shadow-lg border-2 border-white">
+                        ✨
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 蛋糕和蜡烛部分 -->
+        <section class="text-center mb-20 fade-in" style="animation-delay: 0.6s">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-birthday-purple relative inline-block">
+                17岁的美好时光 (◍•ᴗ•◍)♡
+                <span class="absolute -bottom-1 left-0 w-full h-1 bg-birthday-pink/50 rounded-full"></span>
+            </h2>
+            
+            <!-- 蛋糕容器 -->
+            <div class="relative h-96 md:h-[520px] max-w-2xl mx-auto">
+                <!-- 蛋糕托盘 -->
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-72 md:w-96 h-4 bg-gray-200 rounded-full shadow-lg"></div>
+                
+                <!-- 蛋糕底座 -->
+                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-64 md:w-80 h-28 bg-gradient-to-r from-birthday-pink to-birthday-hotpink rounded-t-full border-4 border-birthday-pink/70 shadow-inner">
+                    <div class="absolute top-0 left-0 w-full h-6 bg-white/90 frosting"></div>
+                    <div class="absolute top-6 left-0 w-full flex justify-around">
+                        <div class="w-3 h-3 bg-birthday-gold rounded-full cake-deco"></div>
+                        <div class="w-3 h-3 bg-birthday-blue rounded-full cake-deco-1"></div>
+                        <div class="w-3 h-3 bg-birthday-purple rounded-full cake-deco-2"></div>
+                        <div class="w-3 h-3 bg-birthday-green rounded-full cake-deco"></div>
+                        <div class="w-3 h-3 bg-birthday-yellow rounded-full cake-deco-1"></div>
+                    </div>
+                    <div class="absolute bottom-6 left-0 w-full flex justify-around">
+                        <div class="w-6 h-6 bg-white rounded-full border border-birthday-gold flex items-center justify-center cake-deco">
+                            <div class="w-2 h-2 bg-birthday-gold rounded-full"></div>
+                        </div>
+                        <div class="w-6 h-6 bg-birthday-purple rounded-full border border-white cake-deco-1 flex items-center justify-center text-white text-xs">♡</div>
+                        <div class="w-6 h-6 bg-white rounded-full border border-birthday-gold cake-deco-2 flex items-center justify-center text-birthday-gold text-xs">✧</div>
+                        <div class="w-6 h-6 bg-birthday-pink rounded-full border border-white cake-deco flex items-center justify-center text-white text-xs">✨</div>
+                    </div>
+                </div>
+                
+                <!-- 蛋糕中层 -->
+                <div class="absolute bottom-32 left-1/2 transform -translate-x-1/2 w-56 md:w-72 h-24 bg-gradient-to-r from-birthday-lightpink to-birthday-pink rounded-t-full border-4 border-birthday-lightpink/70 shadow-inner">
+                    <div class="absolute top-0 left-0 w-full h-6 bg-white/90 frosting"></div>
+                    <div class="absolute top-8 left-0 w-full flex justify-around">
+                        <div class="relative w-6 h-6 bg-red-400 rounded-full cake-deco">
+                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-2 h-1 bg-green-500 rounded-full"></div>
+                        </div>
+                        <div class="w-6 h-6 bg-birthday-yellow rounded-full cake-deco-1"></div>
+                        <div class="w-6 h-6 bg-birthday-peach rounded-full cake-deco-2"></div>
+                        <div class="w-6 h-6 bg-birthday-purple rounded-full cake-deco"></div>
+                    </div>
+                    <div class="absolute bottom-4 left-0 w-full flex justify-around">
+                        <div class="w-4 h-8 bg-white rounded-full border-2 border-birthday-pink cake-deco"></div>
+                        <div class="w-4 h-8 bg-white rounded-full border-2 border-birthday-purple cake-deco-1"></div>
+                        <div class="w-4 h-8 bg-white rounded-full border-2 border-birthday-gold cake-deco-2"></div>
+                    </div>
+                </div>
+                
+                <!-- 蛋糕上层 -->
+                <div class="absolute bottom-56 left-1/2 transform -translate-x-1/2 w-48 md:w-64 h-20 bg-gradient-to-r from-birthday-pink to-birthday-hotpink rounded-t-full border-4 border-birthday-pink/70 shadow-inner">
+                    <div class="absolute top-0 left-0 w-full h-6 bg-white/90 frosting"></div>
+                    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-4">
+                        <div class="w-6 h-6 bg-white rounded-full border-2 border-birthday-pink flex items-center justify-center cake-deco text-birthday-pink text-sm">♡</div>
+                        <div class="w-6 h-6 bg-birthday-purple rounded-full border-2 border-white flex items-center justify-center cake-deco-1 text-white text-sm">✨</div>
+                        <div class="w-6 h-6 bg-white rounded-full border-2 border-birthday-pink flex items-center justify-center cake-deco-2 text-birthday-pink text-sm">✧</div>
+                    </div>
+                </div>
+                
+                <!-- 蛋糕顶部装饰 -->
+                <div class="absolute bottom-76 left-1/2 transform -translate-x-1/2 w-16 h-8 bg-white rounded-full border-2 border-birthday-pink flex items-center justify-center cake-deco">
+                    <div class="text-birthday-gold text-2xl">✧</div>
+                </div>
+                
+                <!-- 蛋糕周围小装饰 -->
+                <div class="absolute bottom-10 left-[15%] w-8 h-8 bg-birthday-yellow rounded-full flex items-center justify-center text-white cake-deco">
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="absolute bottom-20 right-[15%] w-8 h-8 bg-birthday-blue rounded-full flex items-center justify-center text-white cake-deco-1">
+                    <i class="fa fa-heart"></i>
+                </div>
+                <div class="absolute bottom-40 left-[10%] w-8 h-8 bg-birthday-green rounded-full flex items-center justify-center text-white cake-deco-2">
+                    <i class="fa fa-gift"></i>
+                </div>
+                <div class="absolute bottom-60 right-[10%] w-8 h-8 bg-birthday-peach rounded-full flex items-center justify-center text-white cake-deco">
+                    (◍•ᴗ•◍)
+                </div>
+                
+                <!-- 17根蜡烛容器 -->
+                <div id="candles" class="absolute bottom-84 left-1/2 transform -translate-x-1/2 w-56 md:w-72 flex justify-around">
+                    <!-- 蜡烛将通过JS动态生成 -->
+                </div>
+                
+                <!-- 蛋糕上的文字装饰 -->
+                <div class="absolute bottom-44 left-1/2 transform -translate-x-1/2 bg-white/90 px-6 py-2 rounded-full text-sm md:text-base font-bold shadow-md shine">
+                    生日快乐！ (๑˃̵ᴗ˂̵)و
+                </div>
+            </div>
+            
+            <!-- 吹蜡烛按钮 -->
+            <button id="blowCandleBtn" class="mt-8 bg-gradient-to-r from-birthday-pink to-birthday-hotpink hover:opacity-90 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed">
+                <i class="fa fa-birthday-cake mr-2"></i>吹蜡烛 (✧ω✧)
+            </button>
+        </section>
+
+        <!-- 许愿框 (默认隐藏) -->
+        <div id="wishModal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
+            <div class="bg-white rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl transform transition-all pop-in">
+                <div class="text-5xl text-birthday-gold mb-4 text-center">
+                    <i class="fa fa-star pulse-slow"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-birthday-purple mb-4 text-center">
+                    许下你的生日愿望 (♡˙︶˙♡)
+                </h3>
+                <textarea id="wishInput" class="w-full h-32 p-4 border-2 border-birthday-pink rounded-lg focus:outline-none focus:ring-2 focus:ring-birthday-purple resize-none" placeholder="在这里写下你的生日愿望..."></textarea>
+                <div class="mt-6">
+                    <button id="submitWishBtn" class="w-full bg-gradient-to-r from-birthday-purple to-birthday-pink hover:opacity-90 text-white font-bold py-3 px-6 rounded-full shadow transform transition hover:scale-105">
+                        许下愿望 ✨
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 愿望实现祝福 (默认隐藏) -->
+        <div id="wishGrantedModal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
+            <div class="bg-white rounded-2xl p-8 max-w-2xl w-full mx-4 shadow-2xl text-center pop-in">
+                <div class="text-6xl mb-4 text-birthday-gold pulse-slow">
+                    <i class="fa fa-heart"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-birthday-purple mb-6">愿望已收到！ (✧ω✧)</h3>
+                
+                <div class="bg-birthday-lavender/30 rounded-xl p-6 mb-6 text-left">
+                    <h4 class="font-bold text-lg mb-3 text-birthday-pink">你的愿望：</h4>
+                    <p id="wishDisplay" class="italic"></p>
+                </div>
+                
+                <p class="text-xl font-bold text-birthday-hotpink mb-6">祝刘奕帆的愿望早日实现！</p>
+                <p class="text-xl font-bold text-birthday-purple">愿你天天开心，幸福美满！ (◍•ᴗ•◍)♡</p>
+                <button id="closeWishBtn" class="mt-8 bg-gradient-to-r from-birthday-pink to-birthday-purple hover:opacity-90 text-white font-bold py-3 px-8 rounded-full shadow transform transition hover:scale-105">
+                    继续庆祝
+                </button>
+            </div>
+        </div>
+
+        <!-- 致刘奕帆的一封信 -->
+        <section id="letterSection" class="mb-20 hidden fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-birthday-purple text-center relative inline-block">
+                致刘奕帆的一封信 (♡˙︶˙♡)
+                <span class="absolute -bottom-1 left-0 w-full h-1 bg-birthday-pink/50 rounded-full"></span>
+            </h2>
+            
+            <div class="bg-white p-8 rounded-2xl shadow-lg max-w-3xl mx-auto border-l-4 border-birthday-pink transform transition-all hover:shadow-xl">
+                <div class="font-xingkai text-xl md:text-2xl leading-relaxed text-gray-700 min-h-64 p-4 bg-birthday-lavender/20 rounded-lg" id="letterContent">
+                    亲爱的刘奕帆：<br><br>
+                    祝你17岁生日快乐！ (๑˃̵ᴗ˂̵)و<br><br>
+                    7/15 13：37分我们相识，开启了一段对于我来说非常好的回忆，今天应该是我们认识的第41天<br><br>
+					刚认识的时候，我们可谓是无话不说，不过因为是只能在抖音上说话，为了等你的消息我或许可以一次性刷三个小时的抖音<br><br>
+					然后你给我发了一张你对镜拍的照片，那是我第一次了解到你的时候，也是我开始去了解你的时候<br><br>
+					然后就是你说要练背，那时候的你给我发了你在健身房的视频，是唯一一次在健身房看到你的视频哈哈哈哈<br><br>
+					你和我说了腰不太好之前受了伤所以我现在也希望你的腰能够好好的，没有伤痛还有病痛，还有还有<br />
+					我给你拍的高位下拉视频，我当时拉的60kg嘛，你说我都可以拉你了，然后和我说虽然你才54，我觉得这样的你还挺可爱的<br><br>
+					7/19那时，我说给我点时间，我把下腹练到爆血管，然后我现在算是有一点点吧哈哈，不过当时你也答应了监督我练腹，我很开心<br><br>
+					7/20那天晚上，你低血糖了，我很担心你 你说你就吃了一顿饭而且没有碳水，头晕手抖心跳加快心慌，从六点开始饿到十一点
+	                <br><br>很难不让人担心你，但当时我们的关系还没到，我不能很明确的告诉你我非常的担心你！我只能以传授知识的由头来让你多吃些身体为重的<br><br>
+					当时你还发了朋友圈说好想吃烧烤面包烤肉火锅米线螺蛳粉羊肉串想吃鸡爪贡菜凉皮，不过现在我好像看不到了哈哈，也不知道为什么今天没看着你的朋友圈，明明我会偶尔偷看一下的<br><br>
+					而且你说要煮螺蛳粉给我看呢，我现在都没看着，不过我还是很期待的，为什么我喜欢找你聊天，因为这是我了解你的唯一途径了呜呜，可有时候你没回我的时候我总会去胡思乱想<br><br>
+					但我又怕找你会打扰到你，也害怕自己太敏感让你不开心，我也不想这样的其实，可能是因为你的陪伴对我来说让我得到了满足吧<br><br>
+					然后从21号开始我就开始陪着你一起熬夜了好像，然后我们就一直分享着自己每天的日常，那个时候的我很开心能够了解你，陪着你一起说话聊天<br><br>
+					在23号的时候，遇上了你给我发的庄老弟，后来我们就一起喜欢看它了，不过最近你好像很少给我发视频了嘿嘿，不过估计你也是比较忙着自己的事情吧，我不能打扰你才行<br><br>
+					然后在这一天我答应了每天提醒你擦身体乳泡脚，让你养成一些好的习惯，也是我第一次觉得能够为你做一些事情<br><br>
+					那个时候的我们每天都在分享不一样的日常，我也每天都会上抖音看看有没有你的消息，因为我想和你说话，想找你聊天，不想错过你的消息<br><br>
+					24号那天，我们一起开启了合养小火人<br><br>
+					在25号这一天，我感受到了你的不一样，我像往常一样开玩笑，我说我卧推80kg做组，想着开学前试试突破100kg<br><br>
+					你问我突然加20可以吗，我开玩笑的说 这个肯定不行的，我会被压住的，到时候就要在健身房喊救命了哈哈<br><br>
+					你突然说了一句，这不好笑，感觉很危险的，你让我一定要注意安全，我第一次感觉到被人关心，我真的很开心很感动<br><br>
+					一直我都非常想谢谢你，至少这是我非常好的一段回忆<br><br>
+					26号，你告诉我昨晚难受 还想熬夜，结果痛经不行了，就睡了，也没睡好<br><br>
+					我当时很担心你，但我好像不能为你做什么事，我就去搜了很多我或许可以帮上忙的事情，也去找了一些注意事项希望可以帮到你<br><br>
+					你和我说，快来的前两天看什么都有点烦，所以我才想着一定要让你开开心心的度过每一天，我想陪着你，不想你有不好的情绪<br><br>
+					26号晚8.23分，我如愿以偿的加上了你的微信，那个时候的我还有一些紧张，并不知道自己会和你说些什么<br><br>
+					那个时候你给我发了关于你的第二个视频，不过是你的手，也很可爱，就像你一样<br><br>
+					其实我很喜欢和你聊天的氛围，我会很开心，被人珍惜的感觉真的很棒，但我不会主动的去打扰你<br><br>
+					我喜欢我们多说说话，但是我不想给你带来不好的印象，我已经20了，或许也该成熟一些了<br><br>
+					不过不知道为什么每次和你聊天我就总会想多和你说说话，即便没了话题我也会硬说一些比较尴尬的话哈哈<br><br>
+					我是不是很没劲，其实我也知道我好像能给你提供的情绪价值越来越少了，嗯.....不过也没关系，因为我的愿望也是希望你可以开心呢<br><br>
+					即便到最后我什么也都没得到，但至少这是我和你之间比较美好的回忆了吧哈哈<br><br>
+					我知道我很容易多想，可能是因为我的内心太敏感了 你之前对我说的话，我真的很感动，所以我一直记得你说的<br><br>
+					即便我们很久没说话，我们的关系也不会变淡 我也得懂事才可以不是吗，毕竟你也有自己的事情要做才对<br><br>
+					毕竟我们最近确实不经常说话了，而且又到了你的生日我还什么都没给你准备我就会感觉有点不好意思找你说话了都<br><br>
+					所以我想让你告诉我我可以做些什么我是很愿意去为你做一些有意义的事情的，不过你也说不用准备什么，只是我确实想为你做，也可能是我多想了吧<br><br>
+					我还有超级超级多的话想告诉你，不过貌似已经快要到12.了呢，祝你生日快乐，还有天天开心!
+					或许我也该找点事做才可以了哈哈，不过和你相处的这一段时间我很开心，谢谢你，刘奕帆<br><br>
+					<br><br>
+                    赖佳俊(糖衣炮弹版)<br>
+                    ✧⁺⸜(●˙▾˙●)⸝⁺✧
+                </div>
+            </div>
+        </section>
+
+        <!-- 抽奖环节（增强版） -->
+        <section id="lotterySection" class="mb-20 hidden fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-birthday-purple text-center relative inline-block">
+                寿星抽奖 (✧ω✧)
+                <span class="absolute -bottom-1 left-0 w-full h-1 bg-birthday-pink/50 rounded-full"></span>
+            </h2>
+            
+            <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+                <!-- 抽奖转盘区域 -->
+                <div class="p-8 text-center border-b border-gray-100">
+                    <div class="mb-4 flex justify-center items-center">
+                        <span class="text-gray-600 font-medium">剩余抽奖次数: </span>
+                        <span id="lotteryRemaining" class="ml-2 text-birthday-hotpink font-bold text-xl">3</span>
+                    </div>
+                    
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 mx-auto mb-8">
+                        <div id="lotteryWheel" class="w-full h-full rounded-full relative overflow-hidden shadow-xl">
+                            <!-- 转盘分区将通过JS生成 -->
+                            
+                            <!-- 转盘中心 -->
+                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white rounded-full z-10 flex items-center justify-center shadow-lg">
+                                <div class="w-12 h-12 bg-birthday-gold rounded-full flex items-center justify-center text-gray-800 font-bold">
+                                    抽
+                                </div>
+                            </div>
+                            
+                            <!-- 转盘指针 -->
+                            <div class="absolute top-[-10px] left-1/2 transform -translate-x-1/2 w-6 h-10 bg-birthday-hotpink z-20">
+                                <div class="w-full h-full bg-birthday-hotpink clip-path polygon(50% 0%, 0% 100%, 100% 100%)"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="prizeDisplay" class="text-2xl font-bold text-birthday-hotpink mb-8 min-h-12 py-4 bg-birthday-lavender/30 rounded-lg max-w-md mx-auto">
+                        点击抽奖按钮开始 (◍•ᴗ•◍)
+                    </div>
+                    
+                    <button id="lotteryBtn" class="bg-gradient-to-r from-birthday-pink to-birthday-hotpink hover:opacity-90 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition hover:scale-105">
+                        <i class="fa fa-gift mr-2"></i> 开始抽奖
+                    </button>
+                </div>
+                
+                <!-- 奖励记录 -->
+                <div class="p-6 bg-birthday-lavender/20">
+                    <h3 class="text-xl font-bold text-birthday-purple mb-4 flex items-center">
+                        <i class="fa fa-history mr-2"></i> 抽奖记录
+                    </h3>
+                    
+                    <div id="prizeHistory" class="space-y-2 max-h-40 overflow-y-auto pr-2">
+                        <p class="text-gray-500 italic text-center">暂无抽奖记录 (๑˃̵ᴗ˂̵)و</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 回忆录部分（修改为20个照片格子和15个视频格子） -->
+        <section id="memoriesSection" class="mb-20 hidden fade-in">
+    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-birthday-purple text-center relative inline-block">
+        我们的回忆 
+        <span class="absolute -bottom-1 left-0 w-full h-1 bg-birthday-pink/50 rounded-full"></span>
+    </h2>
+    
+    <!-- 照片回忆区（20个格子） -->
+    <h3 class="text-2xl font-bold mb-6 text-birthday-pink flex items-center">
+        <i class="fa fa-camera mr-2"></i> 照片回忆
+    </h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-12">
+        <!-- 照片1：已有内容 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden photo-hover">
+            <div class="relative overflow-hidden h-48">
+                <images src="images/one.jpg" alt="初识的对镜自拍" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform edit-photo-btn">
+                        <i class="fa fa-pencil"></i>
+                    </button>
+                </div>
+                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                    <i class="fa fa-camera mr-1"></i> 照片
+                </div>
+            </div>
+            <div class="p-4">
+                <h3 class="font-bold text-lg mb-1 text-birthday-purple photo-title">初识的对镜自拍</h3>
+                <p class="text-gray-700 text-sm photo-desc">这是你给我发的第一张照片，也是我了解你的开始，当时还提醒你要好好吃饭呢~</p>
+            </div>
+        </div>
+        
+        <!-- 照片2：已有内容 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden photo-hover">
+            <div class="relative overflow-hidden h-48">
+                <images src="images/two.jpg" alt="你" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform edit-photo-btn">
+                        <i class="fa fa-pencil"></i>
+                    </button>
+                </div>
+                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                    <i class="fa fa-camera mr-1"></i> 照片
+                </div>
+            </div>
+            <div class="p-4">
+                <h3 class="font-bold text-lg mb-1 text-birthday-purple photo-title">这是我觉得特别可爱的一张照片</h3>
+                <p class="text-gray-700 text-sm photo-desc">这是我最喜欢的照片之一，我觉得应该能排第二名</p>
+            </div>
+        </div>
+
+        <!-- 照片3：已有内容 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden photo-hover">
+            <div class="relative overflow-hidden h-48">
+                <images src="images/three.jpg" alt="长发的时候" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform edit-photo-btn">
+                        <i class="fa fa-pencil"></i>
+                    </button>
+                </div>
+                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                    <i class="fa fa-camera mr-1"></i> 照片
+                </div>
+            </div>
+            <div class="p-4">
+                <h3 class="font-bold text-lg mb-1 text-birthday-purple photo-title">小麻花辫</h3>
+                <p class="text-gray-700 text-sm photo-desc">这也是你给我发的我觉得很可爱的照片之一呢，这个麻花辫很适合你</p>
+            </div>
+        </div>
+
+        <!-- 照片4：已有内容 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden photo-hover">
+            <div class="relative overflow-hidden h-48">
+                <images src="images/four.jpg" alt="户外随拍" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform edit-photo-btn">
+                        <i class="fa fa-pencil"></i>
+                    </button>
+                </div>
+                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                    <i class="fa fa-camera mr-1"></i> 照片
+                </div>
+            </div>
+            <div class="p-4">
+                <h3 class="font-bold text-lg mb-1 text-birthday-purple photo-title">偷偷耍酷是吧</h3>
+                <p class="text-gray-700 text-sm photo-desc">这个丸子头显得你非常的可爱，不过还是要宣布你为忧郁男神的</p>
+            </div>
+        </div>
+
+        <!-- 照片5：已有内容 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden photo-hover">
+            <div class="relative overflow-hidden h-48">
+                <images src="images/five.jpg" alt="妹妹" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform edit-photo-btn">
+                        <i class="fa fa-pencil"></i>
+                    </button>
+                </div>
+                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                    <i class="fa fa-camera mr-1"></i> 照片
+                </div>
+            </div>
+            <div class="p-4">
+                <h3 class="font-bold text-lg mb-1 text-birthday-purple photo-title">我们小寿星可爱的妹妹呢</h3>
+                <p class="text-gray-700 text-sm photo-desc">这张拍的也是非常可爱的，和你一样</p>
+            </div>
+        </div>
+
+        <!-- 照片6-20：上传占位格子 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] hover:shadow-xl">
+                        <div class="relative overflow-hidden h-48">
+                            <images src="images/six.jpg" alt="偶遇" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform">
+                                    <i class="fa fa-pencil"></i>
+                                </button>
+                            </div>
+                            <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                <i class="fa fa-camera mr-1"></i> 照片
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-1 text-birthday-purple">比格犬</h3>
+                            <p class="text-gray-700 text-sm">这是我们的小寿星之前偶遇的比格犬呢</p>
+                        </div>
+                    </div>
+
+            <!-- 照片7 -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] hover:shadow-xl">
+                            <div class="relative overflow-hidden h-48">
+                                <images src="images/seven.jpg" alt="妹妹" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform">
+                                        <i class="fa fa-pencil"></i>
+                                    </button>
+                                </div>
+                                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                    <i class="fa fa-camera mr-1"></i> 照片
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-1 text-birthday-purple">这张也是我们的女明星呢</h3>
+                                <p class="text-gray-700 text-sm">是不是特别可爱！你给我发的时候我也是这么想的呢</p>
+                            </div>
+                        </div>
+        
+                        <!-- 照片8 -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] hover:shadow-xl">
+                            <div class="relative overflow-hidden h-48">
+                                <images src="images/eight.jpg" alt="爱吃的美食" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform">
+                                        <i class="fa fa-pencil"></i>
+                                    </button>
+                                </div>
+                                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                    <i class="fa fa-camera mr-1"></i> 照片
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-1 text-birthday-purple">这是咱们小寿星安利给我的美食</h3>
+                                <p class="text-gray-700 text-sm">看起来其实是很不错的，哼哼，我很快就会去品尝你给我安利的食物的</p>
+                            </div>
+                        </div>
+        
+                        <!-- 照片9 -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] hover:shadow-xl">
+                            <div class="relative overflow-hidden h-48">
+                                <images src="images/nine.jpg" alt="麦当劳" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform">
+                                        <i class="fa fa-pencil"></i>
+                                    </button>
+                                </div>
+                                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                    <i class="fa fa-camera mr-1"></i> 照片
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-1 text-birthday-purple">麦当劳女王</h3>
+                                <p class="text-gray-700 text-sm">恭迎我们的麦当劳女王降临，女王万岁万岁万万岁</p>
+                            </div>
+                        </div>
+        
+                        <!-- 照片10 -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] hover:shadow-xl">
+                            <div class="relative overflow-hidden h-48">
+                                <images src="images/ten.jpg" alt="暖水袋" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform">
+                                        <i class="fa fa-pencil"></i>
+                                    </button>
+                                </div>
+                                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                    <i class="fa fa-camera mr-1"></i> 照片
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-1 text-birthday-purple">暖暖肚子</h3>
+                                <p class="text-gray-700 text-sm">这是你当时给我报备在暖肚子的时候，你说没这么疼的时候我可开心了哈哈 然后你还说肚子会红红的</p>
+                            </div>
+                        </div>
+        
+                        <!-- 照片11 -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] hover:shadow-xl">
+                            <div class="relative overflow-hidden h-48">
+                                <images src="images/eleven.jpg" alt="厨艺" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform">
+                                        <i class="fa fa-pencil"></i>
+                                    </button>
+                                </div>
+                                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                    <i class="fa fa-camera mr-1"></i> 照片
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-1 text-birthday-purple">这是刘奕帆小厨神</h3>
+                                <p class="text-gray-700 text-sm">第一次看到咱们的小厨神做顿好吃的犒劳自己，不过当时你切到手了 害我心疼了两天呜呜</p>
+                            </div>
+                        </div>
+        
+                        <!-- 照片12 -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] hover:shadow-xl">
+                            <div class="relative overflow-hidden h-48">
+                                <images src="images/twelve.jpg" alt="炭烤" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform">
+                                        <i class="fa fa-pencil"></i>
+                                    </button>
+                                </div>
+                                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                    <i class="fa fa-camera mr-1"></i> 照片
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-1 text-birthday-purple">小小美食之一</h3>
+                                <p class="text-gray-700 text-sm">这也是我们小厨神做的一道美食呢，是叫做碳烤紫薯吗？</p>
+                            </div>
+                        </div>
+        
+                        <!-- 照片13 -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] hover:shadow-xl">
+                            <div class="relative overflow-hidden h-48">
+                                <images src="images/thirteen.jpg" alt="美甲" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform">
+                                        <i class="fa fa-pencil"></i>
+                                    </button>
+                                </div>
+                                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                    <i class="fa fa-camera mr-1"></i> 照片
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-1 text-birthday-purple">美美的指甲</h3>
+                                <p class="text-gray-700 text-sm">这是我们一起选的美甲呢，我觉得非常适合你的！</p>
+                            </div>
+                        </div>
+        
+                        <!-- 照片14 -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] hover:shadow-xl">
+                            <div class="relative overflow-hidden h-48">
+                                <images src="images/fourteen.jpg" alt="我们之间的" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform">
+                                        <i class="fa fa-pencil"></i>
+                                    </button>
+                                </div>
+                                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                    <i class="fa fa-camera mr-1"></i> 照片
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-1 text-birthday-purple">这是我们一起拆到的哦</h3>
+                                <p class="text-gray-700 text-sm">我很开心，那个时候你在外边玩也能想到我，而且还是你也喜欢的妮妮</p>
+                            </div>
+                        </div>
+        
+                        <!-- 照片15 -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] hover:shadow-xl">
+                            <div class="relative overflow-hidden h-48">
+                                <images src="images/fiveteen.jpg" alt="新发型" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform">
+                                        <i class="fa fa-pencil"></i>
+                                    </button>
+                                </div>
+                                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                    <i class="fa fa-camera mr-1"></i> 照片
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-1 text-birthday-purple">这是我们寿星新的发型哦！</h3>
+                                <p class="text-gray-700 text-sm">超级超级酷的好吧！我要做忠实的小迷弟</p>
+                            </div>
+                        </div>
+        
+                        <!-- 照片16 -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] hover:shadow-xl">
+                            <div class="relative overflow-hidden h-48">
+                                <images src="images/sixteen.jpg" alt="减脂餐" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform">
+                                        <i class="fa fa-pencil"></i>
+                                    </button>
+                                </div>
+                                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                    <i class="fa fa-camera mr-1"></i> 照片
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-1 text-birthday-purple">这是小厨神做的减脂餐</h3>
+                                <p class="text-gray-700 text-sm">当时好像还是大营养家呢！营养分配的可棒了 要是再少熬夜就更好了嘿嘿</p>
+                            </div>
+                        </div>
+        
+                        <!-- 照片17 -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] hover:shadow-xl">
+                            <div class="relative overflow-hidden h-48">
+                                <images src="images/seventeen.jpg" alt="喜欢" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                                <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <button class="bg-white text-birthday-pink rounded-full p-2 transform translate-y-4 hover:translate-y-0 transition-transform">
+                                        <i class="fa fa-pencil"></i>
+                                    </button>
+                                </div>
+                                <div class="absolute top-2 right-2 bg-birthday-pink/80 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                    <i class="fa fa-camera mr-1"></i> 照片
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-1 text-birthday-purple">这张是我最喜欢的照片了</h3>
+                                <p class="text-gray-700 text-sm">我非常非常喜欢这一张照片，因为这算得上是我们俩一起出镜的照片吧哈哈哈哈</p>
+                            </div>
+                        </div>
+        
+            
+
+
+        <!-- 祝福卡片 -->
+        <section id="blessingCard" class="mb-16 hidden fade-in">
+            <div class="max-w-3xl mx-auto bg-gradient-to-r from-birthday-purple/90 to-birthday-pink/90 rounded-2xl shadow-xl p-8 text-center text-white transform transition-all hover:shadow-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-shadow">致刘奕帆的祝福</h2>
+                <p class="text-xl md:text-2xl leading-relaxed mb-0">
+                    希望你能够开开心心的度过这一次生日，我们的刘奕帆只需要健健康康开开心心的长大就好了！<br>
+                    17岁的你，闪闪发光，愿你天天开心，梦想成真！事事顺遂！也希望我可以一直陪在你身边 (◍•ᴗ•◍)♡
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-white/80 backdrop-blur-sm py-8 text-center border-t border-birthday-pink/20 relative z-10">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center gap-4 mb-4">
+                <span class="text-birthday-pink"><i class="fa fa-heart"></i></span>
+                <span class="text-birthday-purple"><i class="fa fa-star"></i></span>
+                <span class="text-birthday-gold"><i class="fa fa-gift"></i></span>
+            </div>
+            <p class="text-gray-600">祝刘奕帆17岁生日快乐！永远开心幸福！</p>
+        </div>
+    </footer>
+
+    <script>
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            // 生成17根蜡烛
+            const candlesContainer = document.getElementById('candles');
+            const candleColors = [
+                'bg-birthday-pink', 'bg-birthday-purple', 'bg-birthday-hotpink',
+                'bg-birthday-blue', 'bg-birthday-green', 'bg-birthday-yellow'
+            ];
+            
+            // 确保生成17根蜡烛
+            for (let i = 0; i < 17; i++) {
+                const colorIndex = i % candleColors.length;
+                const candle = document.createElement('div');
+                candle.className = 'relative w-4 flex flex-col items-center';
+                
+                // 蜡烛火焰
+                const flame = document.createElement('div');
+                flame.className = 'w-3 h-5 bg-gradient-to-b from-birthday-yellow to-birthday-gold rounded-full candle-flame mb-1 flame';
+                flame.id = `flame-${i}`;
+                
+                // 蜡烛主体
+                const candleBody = document.createElement('div');
+                candleBody.className = `w-full h-16 ${candleColors[colorIndex]} rounded-t-full relative`;
+                
+                // 蜡烛芯
+                const wick = document.createElement('div');
+                wick.className = 'w-0.5 h-3 bg-gray-700 absolute top-0 left-1/2 transform -translate-x-1/2';
+                
+                candleBody.appendChild(wick);
+                candle.appendChild(flame);
+                candle.appendChild(candleBody);
+                candlesContainer.appendChild(candle);
+            }
+            
+            // 创建抽奖转盘分区
+            const lotteryWheel = document.getElementById('lotteryWheel');
+            const wheelColors = [
+                'bg-birthday-pink', 'bg-birthday-purple', 'bg-birthday-hotpink',
+                'bg-birthday-blue', 'bg-birthday-green', 'bg-birthday-yellow',
+                'bg-birthday-peach', 'bg-birthday-cream'
+            ];
+            
+            const wheelPrizes = [
+                '精美蛋糕', '幸运手链', '电影票', '神秘礼物',
+                '生日红包', '朋友拥抱', '愿望券', '冰淇淋',
+                '定制明信片', '零食礼包', '手写信', '演唱会门票',
+                'DIY套装', '相册', '文具礼盒', '祝福视频'
+            ];
+            
+            // 创建16个分区
+            const sections = 16;
+            const anglePerSection = 360 / sections;
+            
+            for (let i = 0; i < sections; i++) {
+                const section = document.createElement('div');
+                const colorIndex = i % wheelColors.length;
+                const rotation = i * anglePerSection;
+                
+                section.className = `wheel-section ${wheelColors[colorIndex]}`;
+                section.style.transform = `rotate(${rotation}deg)`;
+                
+                // 添加奖品文字
+                const prizeText = document.createElement('div');
+                prizeText.className = 'wheel-text';
+                prizeText.style.transform = `rotate(${-rotation}deg)`;
+                prizeText.textContent = wheelPrizes[i % wheelPrizes.length];
+                
+                section.appendChild(prizeText);
+                lotteryWheel.appendChild(section);
+            }
+            
+            // 吹蜡烛功能
+            const blowCandleBtn = document.getElementById('blowCandleBtn');
+            const wishModal = document.getElementById('wishModal');
+            const submitWishBtn = document.getElementById('submitWishBtn');
+            const wishGrantedModal = document.getElementById('wishGrantedModal');
+            const wishDisplay = document.getElementById('wishDisplay');
+            const wishInput = document.getElementById('wishInput');
+            const closeWishBtn = document.getElementById('closeWishBtn');
+            const letterSection = document.getElementById('letterSection');
+            const lotterySection = document.getElementById('lotterySection');
+            const memoriesSection = document.getElementById('memoriesSection');
+            const blessingCard = document.getElementById('blessingCard');
+            
+            // 吹蜡烛按钮点击事件
+            blowCandleBtn.addEventListener('click', function() {
+                // 添加吹灭动画
+                const flames = document.querySelectorAll('.flame');
+                flames.forEach((flame, index) => {
+                    // 每个火焰延迟不同时间熄灭，增加真实感
+                    setTimeout(() => {
+                        flame.classList.add('blow-out');
+                    }, index * 100);
+                });
+                
+                // 禁用按钮防止重复点击
+                blowCandleBtn.disabled = true;
+                blowCandleBtn.innerHTML = '<i class="fa fa-check mr-2"></i>蜡烛已吹灭';
+                
+                // 蜡烛熄灭后显示许愿框
+                setTimeout(() => {
+                    wishModal.classList.remove('hidden');
+                    
+                    // 播放吹蜡烛音效（如果需要可以添加）
+                    // const audio = new Audio('blow-sound.mp3');
+                    // audio.play();
+                }, 2000);
+            });
+            
+            // 提交愿望按钮点击事件
+            submitWishBtn.addEventListener('click', function() {
+                const wishText = wishInput.value.trim();
+                if (wishText) {
+                    wishDisplay.textContent = wishText;
+                    wishModal.classList.add('hidden');
+                    wishGrantedModal.classList.remove('hidden');
+                    
+                    // 显示后续内容区域
+                    setTimeout(() => {
+                        letterSection.classList.remove('hidden');
+                        setTimeout(() => {
+                            lotterySection.classList.remove('hidden');
+                            setTimeout(() => {
+                                memoriesSection.classList.remove('hidden');
+                                setTimeout(() => {
+                                    blessingCard.classList.remove('hidden');
+                                }, 300);
+                            }, 300);
+                        }, 300);
+                    }, 1000);
+                } else {
+                    alert('请输入你的生日愿望哦！');
+                }
+            });
+            
+            // 关闭愿望弹窗按钮
+            closeWishBtn.addEventListener('click', function() {
+                wishGrantedModal.classList.add('hidden');
+            });
+            
+            // 音乐按钮功能
+            const musicBtn = document.getElementById('musicBtn');
+            let isPlaying = false;
+            const backgroundMusic = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+            backgroundMusic.loop = true;
+            
+            musicBtn.addEventListener('click', function() {
+                if (isPlaying) {
+                    backgroundMusic.pause();
+                    musicBtn.innerHTML = '<i class="fa fa-music"></i>';
+                } else {
+                    backgroundMusic.play().catch(e => {
+                        console.log('自动播放失败，需要用户交互:', e);
+                        alert('请点击页面任意位置后再次尝试播放音乐');
+                    });
+                    musicBtn.innerHTML = '<i class="fa fa-pause"></i>';
+                }
+                isPlaying = !isPlaying;
+            });
+            
+            // 增强版抽奖功能
+            const lotteryBtn = document.getElementById('lotteryBtn');
+            const prizeDisplay = document.getElementById('prizeDisplay');
+            const lotteryRemaining = document.getElementById('lotteryRemaining');
+            const prizeHistory = document.getElementById('prizeHistory');
+            let remainingDraws = 3;
+            let isSpinning = false;
+            
+            // 更丰富的奖品池
+            const prizes = [
+                '精美蛋糕一份', '幸运手链一条', '欢乐电影票两张',
+                '神秘礼物一份', '生日红包一个', '任意一杯奶茶',
+                '愿望实现券', '美味冰淇淋', '定制明信片一套',
+                '零食大礼包', '手工相册一本', '演唱会门票一张',
+                'DIY手工套装', '等你回来'
+            ];
+            
+            lotteryBtn.addEventListener('click', function() {
+                if (isSpinning || remainingDraws <= 0) return;
+                
+                isSpinning = true;
+                lotteryBtn.disabled = true;
+                lotteryBtn.innerHTML = '<i class="fa fa-spinner fa-spin mr-2"></i>抽奖中...';
+                prizeDisplay.textContent = '转盘转动中...';
+                
+                // 随机旋转角度（5-10圈）
+                const rotation = 360 * (5 + Math.random() * 5) + Math.random() * 360;
+                lotteryWheel.style.transition = 'transform 6s cubic-bezier(0.2, 0.8, 0.2, 1)';
+                lotteryWheel.style.transform = `rotate(${rotation}deg)`;
+                
+                // 随机选择奖品
+                const randomPrizeIndex = Math.floor(Math.random() * prizes.length);
+                const prize = prizes[randomPrizeIndex];
+                
+                // 转盘停止后显示结果
+                setTimeout(() => {
+                    // 添加庆祝效果
+                    createConfetti();
+                    
+                    isSpinning = false;
+                    remainingDraws--;
+                    lotteryRemaining.textContent = remainingDraws;
+                    prizeDisplay.textContent = `恭喜获得: ${prize}`;
+                    lotteryBtn.disabled = false;
+                    lotteryBtn.innerHTML = '<i class="fa fa-gift mr-2"></i> 开始抽奖';
+                    
+                    // 添加到抽奖记录
+                    const historyItem = document.createElement('div');
+                    historyItem.className = 'bg-white p-3 rounded-lg shadow text-left';
+                    historyItem.innerHTML = `<span class="font-bold text-birthday-purple">获得:</span> ${prize}`;
+                    
+                    if (prizeHistory.querySelector('p.italic')) {
+                        prizeHistory.innerHTML = '';
+                    }
+                    prizeHistory.prepend(historyItem);
+                    
+                    if (remainingDraws <= 0) {
+                        lotteryBtn.disabled = true;
+                        lotteryBtn.innerHTML = '<i class="fa fa-trophy mr-2"></i> 抽奖次数用完';
+                    }
+                }, 6000);
+            });
+            
+            // 创建庆祝彩屑效果
+            function createConfetti() {
+                const colors = ['#FF69B4', '#C084FC', '#FFD700', '#87CEEB', '#98FB98', '#FFB3BA'];
+                const container = document.createElement('div');
+                container.className = 'fixed inset-0 pointer-events-none z-50';
+                document.body.appendChild(container);
+                
+                for (let i = 0; i < 100; i++) {
+                    const confetti = document.createElement('div');
+                    const size = Math.random() * 10 + 5;
+                    const color = colors[Math.floor(Math.random() * colors.length)];
+                    
+                    confetti.className = 'absolute';
+                    confetti.style.width = `${size}px`;
+                    confetti.style.height = `${size}px`;
+                    confetti.style.backgroundColor = color;
+                    confetti.style.left = `${Math.random() * 100}vw`;
+                    confetti.style.top = `-${size}px`;
+                    confetti.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
+                    confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+                    confetti.style.animation = `confetti-fall ${3 + Math.random() * 4}s linear forwards`;
+                    confetti.style.animationDelay = `${Math.random() * 2}s`;
+                    
+                    container.appendChild(confetti);
+                }
+                
+                // 移除彩屑容器
+                setTimeout(() => {
+                    container.remove();
+                }, 8000);
+            }
+            
+            // 照片和视频格子的点击事件（用于上传和编辑）
+            document.querySelectorAll('.grid .bg-white').forEach(item => {
+                const uploadBtn = item.querySelector('.fa-upload').closest('button');
+                if (uploadBtn) {
+                    uploadBtn.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        alert('请在此处上传你的照片或视频');
+                        // 实际项目中可以在这里触发文件上传
+                    });
+                }
+                
+                const editBtn = item.querySelector('.fa-pencil').closest('button');
+                if (editBtn) {
+                    editBtn.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        const title = item.querySelector('h3').textContent;
+                        const newTitle = prompt('请输入标题:', title);
+                        if (newTitle) {
+                            item.querySelector('h3').textContent = newTitle;
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
